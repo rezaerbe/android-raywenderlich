@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Handbook</string>
+
+    <string name="login_label">Login</string>
+    <string name="register_label">Register</string>
+    <string name="handbook_motto">Connect with other hands throughout the world</string>
+
+    <string name="welcome_base_activity">Welcome to Handbook</string>
+    <string name="welcome_onboarding_activity">Welcome to Handbook from OnBoarding activity</string>
+    <string name="welcome_base_activity_member">Welcome to Handbook from member function</string>
+    <string name="greeting_anonymous">Welcome to Handbook</string>
+    <string name="greeting_user">Welcome to Handbook %1$s</string>
+
+    <string name="choose_username_hint">Choose a username</string>
+    <string name="enter_fingers_hint">Enter number of fingers</string>
+    <string name="enter_thumbs_hint">Enter number of thumbs</string>
+    <string name="enter_bio_hint">Tell us about yourself</string>
+    <string name="enter_password_hint">Enter password</string>
+    <string name="enter_username_hint">Enter username</string>
+    <string name="logout_label">Logout</string>
+    <string name="logo_url">https://koenig-media.raywenderlich.com/uploads/2020/05/handbook_logo.png</string>
+
+    <string name="mandatory_fields">All fields are mandatory</string>
+    <string name="username_already_exists">Hand with same username already exists</string>
+    <string name="wrong_password">Password is wrong</string>
+    <string name="username_not_found">Hand with this username not found</string>
+    <string name="username_validation_error">Username unavailable. Try %1$s100, %1$s200</string>
+
+    <string name="welcome_username">Hi, %1$s</string>
+    <string name="user_description">Bio: %1$s\nFingers: %2$d\nThumbs: %3$d</string>
+    <string name="user_description_total_fingers">Bio: %1$s\nTotal Fingers: %2$s</string>
+</resources>

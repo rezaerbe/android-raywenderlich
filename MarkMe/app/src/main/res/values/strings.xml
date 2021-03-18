@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MarkMe</string>
+
+    <string name="content_description_attendance">Attendance</string>
+    <string name="content_description_grading">Grading</string>
+    <string name="hint_grade">0–10</string>
+    <string name="btn_text_save_to_prefs">Save to prefs</string>
+    <string name="btn_text_save_to_db">Save to db</string>
+</resources>

@@ -1,0 +1,3 @@
+include ':libcollection'
+include ':app'
+rootProject.name = "Collection"

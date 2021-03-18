@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/main_nav_graph"
+  app:startDestination="@id/startSurveyFragment"
+  tools:ignore="UnusedNavigation">
+
+  <fragment
+    android:id="@+id/allSurveysFragment"
+    android:name="com.erbe.customersurvey.allsurveys.AllSurveysFragment"
+    android:label="All Surveys"
+    tools:layout="@layout/fragment_all_surveys">
+
+  </fragment>
+
+  <fragment
+    android:id="@+id/startSurveyFragment"
+    android:name="com.erbe.customersurvey.startsurvey.StartSurveyFragment"
+    android:label="Start Survey"
+    tools:layout="@layout/fragment_start_survey">
+
+    <action
+      android:id="@+id/action_startSurveyFragment_to_customerSurveyFragment"
+      app:destination="@id/customerSurveyFragment" />
+
+  </fragment>
+
+  <fragment
+    android:id="@+id/customerSurveyFragment"
+    android:name="com.erbe.customersurvey.customersurveys.CustomerSurveyFragment"
+    android:label="Survey"
+    tools:layout="@layout/fragment_customer_survey">
+
+    <action
+      android:id="@+id/action_surveyFragment_to_surveyCompletedFragment"
+      app:destination="@id/surveyCompletedFragment" />
+
+  </fragment>
+
+  <fragment
+    android:id="@+id/surveyCompletedFragment"
+    android:name="com.erbe.customersurvey.completedsurvey.SurveyCompletedFragment"
+    android:label="Survey Completed"
+    tools:layout="@layout/fragment_survey_completed">
+
+    <action
+      android:id="@+id/action_surveyCompletedFragment_to_allSurveysFragment"
+      app:destination="@id/allSurveysFragment"
+      app:popUpTo="@id/startSurveyFragment"
+      app:popUpToInclusive="true" />
+
+  </fragment>
+
+</navigation>

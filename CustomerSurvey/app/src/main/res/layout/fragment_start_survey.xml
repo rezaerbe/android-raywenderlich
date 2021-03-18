@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="16dp">
+
+  <TextView
+    android:id="@+id/tvSurveyDesc"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/text_survey_desc"
+    android:textAlignment="center"
+    android:textColor="@android:color/black"
+    android:textSize="16sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.1" />
+
+  <ImageView
+    android:id="@+id/imgSurvey"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:contentDescription="@string/desc_survey_image"
+    android:src="@drawable/object_test"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/tvSurveyDesc"
+    app:layout_constraintVertical_bias="0.26999998" />
+
+  <com.google.android.material.button.MaterialButton
+    android:id="@+id/btnStartSurvey"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/button_start_survey_label"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/imgSurvey"
+    app:layout_constraintVertical_bias="0.13" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,58 @@
+[
+  {
+    "placeId": 1,
+    "price": 9000
+  },
+  {
+    "placeId": 2,
+    "price": 10000
+  },
+  {
+    "placeId": 3,
+    "price": 5000
+  },
+  {
+    "placeId": 4,
+    "price": 10000
+  },
+  {
+    "placeId": 5,
+    "price": 6000
+  },
+  {
+    "placeId": 6,
+    "price": 7000
+  },
+  {
+    "placeId": 100,
+    "price": 10000
+  },
+  {
+    "placeId": 101,
+    "price": 1000000
+  },
+  {
+    "placeId": 102,
+    "price": 2000000
+  },
+  {
+    "placeId": 103,
+    "price": 1040000
+  },
+  {
+    "placeId": 104,
+    "price": 900000
+  },
+  {
+    "placeId": 105,
+    "price": 2500000
+  },
+  {
+    "placeId": 106,
+    "price": 400000
+  },
+  {
+    "placeId": 107,
+    "price": 800000
+  }
+]

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_marginBottom="16dp"
+  app:cardCornerRadius="4dp"
+  app:cardElevation="2dp">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+      android:id="@+id/character_name_textview"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="4dp"
+      android:textSize="16sp"
+        android:textColor="@color/black"
+      tools:text="Name: Phineas Nigellus Black" />
+
+    <TextView
+      android:id="@+id/character_role_textview"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="4dp"
+      android:textSize="14sp"
+      android:textColor="@color/black"
+      tools:text="Role: (Formerly) Headmaster of Hogwarts" />
+
+    <TextView
+      android:id="@+id/orderOfThePhoenix_textview"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="4dp"
+      android:textSize="14sp"
+      android:textColor="@color/black"
+      tools:text="Order of the Phoenix: false" />
+
+  </LinearLayout>
+
+</androidx.cardview.widget.CardView>

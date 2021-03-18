@@ -1,0 +1,72 @@
+[
+  {
+    "placeId": 1,
+    "name": "Paris",
+    "planet": "Earth"
+  },
+  {
+    "placeId": 2,
+    "name": "Berlin",
+    "planet": "Earth"
+  },
+  {
+    "placeId": 3,
+    "name": "Pokhara",
+    "planet": "Earth"
+  },
+  {
+    "placeId": 4,
+    "name": "Las Vegas",
+    "planet": "Earth"
+  },
+  {
+    "placeId": 5,
+    "name": "Baros Island",
+    "planet": "Earth"
+  },
+  {
+    "placeId": 6,
+    "name": "Bali",
+    "planet": "Earth"
+  },
+  {
+    "placeId": 100,
+    "name": "Columbia Hills, Gusev",
+    "planet": "Mars"
+  },
+  {
+    "placeId": 101,
+    "name": "Eberswalde",
+    "planet": "Mars"
+  },
+  {
+    "placeId": 102,
+    "name": "Holden Crater",
+    "planet": "Mars"
+  },
+  {
+    "placeId": 103,
+    "name": "Jezero Crater",
+    "planet": "Mars"
+  },
+  {
+    "placeId": 104,
+    "name": "Mawrth Vallis",
+    "planet": "Mars"
+  },
+  {
+    "placeId": 105,
+    "name": "NE Syrtis",
+    "planet": "Mars"
+  },
+  {
+    "placeId": 106,
+    "name": "Nili Fossae",
+    "planet": "Mars"
+  },
+  {
+    "placeId": 107,
+    "name": "SW Melas",
+    "planet": "Mars"
+  }
+]

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/inputLayoutEmail"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+      android:id="@+id/tvMealLabel"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:text="@string/text_select_meal"
+      android:textColor="@android:color/black"
+      android:textSize="16sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/inputLayoutEmail" />
+
+    <RadioGroup
+      android:id="@+id/radioGroupMeals"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:orientation="horizontal"
+      android:weightSum="6"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/tvMealLabel">
+
+      <RadioButton
+        android:id="@+id/radioBreakfast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="@string/text_breakfast" />
+
+      <RadioButton
+        android:id="@+id/radioLunch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="@string/text_lunch" />
+
+      <RadioButton
+        android:id="@+id/radioDinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="@string/text_dinner" />
+
+    </RadioGroup>
+
+    <TextView
+      android:id="@+id/tvQuestionOne"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:text="@string/text_question_one"
+      android:textColor="@android:color/black"
+      android:textSize="16sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/radioGroupMeals" />
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+      android:id="@+id/layoutQuestionOne"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="6dp"
+      android:weightSum="6"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/tvQuestionOne"
+      app:singleSelection="true">
+
+      <com.google.android.material.button.MaterialButton
+        android:id="@+id/imgHappyReaction"
+        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="@string/text_happy_desc"
+        android:textSize="12sp"
+        app:icon="@drawable/ic_happy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+      <com.google.android.material.button.MaterialButton
+        android:id="@+id/imgBasicHappyReaction"
+        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="@string/text_basic_happy_desc"
+        android:textSize="12sp"
+        app:icon="@drawable/ic_smile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+      <com.google.android.material.button.MaterialButton
+        android:id="@+id/imgSadReaction"
+        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="@string/text_bad_desc"
+        android:textSize="12sp"
+        app:icon="@drawable/ic_extreme_sad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <TextView
+      android:id="@+id/tvQuestionTwo"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:text="@string/text_question_two"
+      android:textColor="@android:color/black"
+      android:textSize="16sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/layoutQuestionOne" />
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+      android:id="@+id/layoutQuestionTwo"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="6dp"
+      android:textSize="12sp"
+      android:weightSum="6"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/tvQuestionTwo"
+      app:singleSelection="true">
+
+      <com.google.android.material.button.MaterialButton
+        android:id="@+id/imgHappyReaction2"
+        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="@string/text_happy_desc"
+        android:textSize="12sp"
+        app:icon="@drawable/ic_happy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <com.google.android.material.button.MaterialButton
+        android:id="@+id/imgBasicHappyReaction2"
+        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="@string/text_basic_happy_desc"
+        android:textSize="12sp"
+        app:icon="@drawable/ic_smile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+      <com.google.android.material.button.MaterialButton
+        android:id="@+id/imgSadReaction2"
+        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="@string/text_bad_desc"
+        android:textSize="12sp"
+        app:icon="@drawable/ic_extreme_sad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <TextView
+      android:id="@+id/tvQuestionThree"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:text="@string/text_question_three"
+      android:textColor="@android:color/black"
+      android:textSize="16sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/layoutQuestionTwo" />
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+      android:id="@+id/layoutQuestionThree"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="6dp"
+      android:textSize="12sp"
+      android:weightSum="6"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/tvQuestionThree"
+      app:singleSelection="true">
+
+      <com.google.android.material.button.MaterialButton
+        android:id="@+id/imgHappyReaction3"
+        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="@string/text_happy_desc"
+        android:textSize="12sp"
+        app:icon="@drawable/ic_happy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+      <com.google.android.material.button.MaterialButton
+        android:id="@+id/imgBasicHappyReaction3"
+        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="@string/text_basic_happy_desc"
+        android:textSize="12sp"
+        app:icon="@drawable/ic_smile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <com.google.android.material.button.MaterialButton
+        android:id="@+id/imgSadReaction3"
+        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="@string/text_bad_desc"
+        android:textSize="12sp"
+        app:icon="@drawable/ic_extreme_sad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <com.google.android.material.button.MaterialButton
+      android:id="@+id/btnSubmitSurvey"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:text="@string/text_submit_survey"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/layoutQuestionThree" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_wallpaper">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/activity_main__cardview__attendance"
+        android:layout_width="@dimen/fully_stretchable"
+        android:layout_height="@dimen/fully_stretchable"
+        android:layout_marginStart="@dimen/xlarge"
+        android:layout_marginLeft="@dimen/xlarge"
+        android:layout_marginEnd="@dimen/standard"
+        android:layout_marginRight="@dimen/standard"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="@dimen/cardview_corner_radius"
+        app:layout_constraintBottom_toTopOf="@+id/activity_main__guideline__75"
+        app:layout_constraintEnd_toStartOf="@+id/activity_main__cardview__grading"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/activity_main__guideline__25">
+
+        <ImageView
+            android:id="@+id/activity_main__image__attendance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/image_default_margin"
+            android:background="@drawable/img_view_main_selector"
+            android:contentDescription="@string/content_description_attendance"
+            android:padding="@dimen/image_default_padding"
+            android:src="@drawable/ic_attendance_cover" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/activity_main__cardview__grading"
+        android:layout_width="@dimen/fully_stretchable"
+        android:layout_height="@dimen/fully_stretchable"
+        android:layout_marginStart="@dimen/standard"
+        android:layout_marginLeft="@dimen/standard"
+        android:layout_marginEnd="@dimen/xlarge"
+        android:layout_marginRight="@dimen/xlarge"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="@dimen/cardview_corner_radius"
+        app:layout_constraintBottom_toTopOf="@+id/activity_main__guideline__75"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/activity_main__cardview__attendance"
+        app:layout_constraintTop_toTopOf="@+id/activity_main__guideline__25">
+
+        <ImageView
+            android:id="@+id/activity_main__image__grading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/image_default_margin"
+            android:background="@drawable/img_view_main_selector"
+            android:contentDescription="@string/content_description_grading"
+            android:padding="@dimen/image_default_padding"
+            android:src="@drawable/ic_grades_cover" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/activity_main__guideline__25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/activity_main__guideline__75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".75" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

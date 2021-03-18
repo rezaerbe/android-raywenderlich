@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">CustomerSurvey</string>
+
+    <string name="text_survey_desc">Welcome to The View Restaurant, your best restaurant for literally any meal. Please complete our survey in order to help improve our services. We always appreciate feedback and believe there is always ROOM for improvements :-) </string>
+    <string name="button_start_survey_label">Start Survey</string>
+    <string name="hint_email">Email</string>
+    <string name="text_question_one">How would you rate the value of our food?</string>
+    <string name="text_happy_desc">Good</string>
+    <string name="text_question_two">How would you rate the overall service?</string>
+    <string name="text_question_three">Please rate the cleanliness of our restaurant</string>
+    <string name="text_basic_happy_desc">Average</string>
+    <string name="text_bad_desc">Bad</string>
+    <string name="text_submit_survey">Submit Survey</string>
+    <string name="text_thank_you">Thank you for completing the survey!</string>
+    <string name="text_view_reviews">View Surveys</string>
+    <string name="text_string_email">example@restaurant.com</string>
+    <string name="text_select_meal">Select Meal</string>
+    <string name="text_breakfast">Breakfast</string>
+    <string name="text_lunch">Lunch</string>
+    <string name="text_dinner">Dinner</string>
+    <string name="text_select_filter">Select filter</string>
+    <string name="text_no_surveys_found">No surveys found!</string>
+    <string name="text_not_time_for_survey">Not time for survey  yet!</string>
+    <string name="desc_sad_image">Sad Image</string>
+    <string name="desc_survey_image">Survey Image</string>
+    <string name="desc_star_image">Star Image</string>
+    <string-array name="array_filter_categories">
+        <item>Choose an option</item>
+        <item>All Surveys</item>
+        <item>Happy Breakfast customers</item>
+        <item>Averagely Happy Lunch Customer</item>
+        <item>Sad Dinner Customers</item>
+        <item>Question one Sad for all meals</item>
+    </string-array>
+</resources>

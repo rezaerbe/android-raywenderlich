@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RedditClone</string>
+
+    <string name="text_retry">Retry</string>
+    <string name="text_score_desc">Score Image</string>
+    <string name="text_comment_desc">Comment Image</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+  <item
+    android:id="@+id/menuLoadQuickest"
+    android:title="@string/load_quickest_one"
+    app:showAsAction="never" />
+
+  <item
+    android:id="@+id/menuAtOnce"
+    android:title="@string/all_at_once"
+    app:showAsAction="never" />
+
+  <item
+    android:id="@+id/menuLoadWhenReady"
+    android:title="@string/load_when_received"
+    app:showAsAction="never" />
+
+  <item
+    android:id="@+id/enableExperimental"
+    android:title="@string/experimental_features"
+    app:showAsAction="never" />
+
+
+  <item android:title="@string/demo">
+
+    <menu>
+      <item
+        android:id="@+id/switchOnNext"
+        android:title="@string/switch_on_next" />
+
+      <item
+        android:id="@+id/join"
+        android:title="@string/join" />
+
+      <item
+        android:id="@+id/groupJoin"
+        android:title="@string/group_join" />
+
+      <item
+        android:id="@+id/dispose"
+        android:title="@string/dispose" />
+
+
+    </menu>
+
+  </item>
+</menu>
+

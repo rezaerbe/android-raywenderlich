@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FileVoid</string>
+
+    <string name="file_arrow">File arrow</string>
+    <string name="file_change_broadcast">com.erbe.filevoid.file_change_broadcast</string>
+
+    <plurals name="number_of_files">
+        <item quantity="one">%d file</item>
+        <item quantity="other">%d files</item>
+    </plurals>
+
+    <string name="empty">Empty</string>
+    <string name="file_size">%1$.2f MB</string>
+    <string name="folder">Folder</string>
+    <string name="options">Options</string>
+    <string name="shred">Shred</string>
+</resources>

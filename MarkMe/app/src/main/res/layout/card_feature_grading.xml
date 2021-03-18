@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/card_default_margin"
+    android:focusableInTouchMode="true"
+    app:cardCornerRadius="@dimen/cardview_corner_radius">
+
+    <TextView
+        android:id="@+id/card_feat_grading__label__name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:padding="@dimen/card_elements_default_padding"
+        android:textColor="@android:color/black"
+        tools:text="Bruce Wayne" />
+
+    <EditText
+        android:id="@+id/card_feat_grading__edittext__grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/card_elements_default_padding"
+        android:layout_marginRight="@dimen/card_elements_default_padding"
+        android:gravity="center_horizontal"
+        android:hint="@string/hint_grade"
+        android:inputType="number"
+        tools:text="10" />
+
+</androidx.cardview.widget.CardView>

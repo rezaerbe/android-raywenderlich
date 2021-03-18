@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:layout_margin="3dp">
+
+    <ProgressBar
+      android:id="@+id/progressBar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:indeterminate="true"
+      android:progressTintMode="add"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:visibility="gone" />
+
+    <LinearLayout
+      android:id="@+id/detailContainer"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:padding="20dp"
+      android:visibility="gone"
+      tools:visibility="visible">
+
+        <TextView
+          android:id="@+id/nameTextView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/colorPrimaryDark"
+          android:textSize="30sp"
+          android:textStyle="bold"
+          tools:text="@string/demo_place_name" />
+
+        <TextView
+          android:id="@+id/planetTextView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/colorPrimaryDark"
+          android:textSize="20sp"
+          tools:text="@string/demo_planet" />
+
+        <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+          android:text="@string/cost_per_person"
+          android:textColor="@color/grey"
+          android:textSize="16sp" />
+
+        <TextView
+          android:id="@+id/costTextView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/colorPrimaryDark"
+          android:textSize="30sp"
+          tools:text="0" />
+
+        <View
+          android:layout_width="wrap_content"
+          android:layout_height="0dp"
+          android:layout_weight="5" />
+
+        <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/number_of_passenger"
+          android:textColor="@color/grey"
+          android:textSize="16sp" />
+
+        <NumberPicker
+          android:id="@+id/numberOfPassengerPicker"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+
+        <CheckBox
+          android:id="@+id/twoWayTravelCheckbox"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="20dp"
+          android:text="@string/two_way_travel"
+          android:textSize="16sp" />
+
+        <View
+          android:layout_width="wrap_content"
+          android:layout_height="0dp"
+          android:layout_weight="1" />
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/result"
+          android:textColor="@color/grey"
+          android:textSize="16sp" />
+
+        <TextView
+          android:id="@+id/resultTextView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:textColor="@color/colorPrimaryDark"
+          android:textSize="50sp"
+          tools:text="0" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

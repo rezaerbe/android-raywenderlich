@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Character</string>
+
+    <string name="character_details_label">Character Details</string>
+    <string name="character_name_label">Name</string>
+    <string name="character_gender_label">Gender</string>
+    <string name="character_origin_label">Origin</string>
+    <string name="character_status_label">Status</string>
+    <string name="no_characters_label">No characters found</string>
+</resources>

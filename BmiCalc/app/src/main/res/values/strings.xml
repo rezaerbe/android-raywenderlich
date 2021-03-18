@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BmiCalc</string>
+
+    <string name="log_weight_hint">50</string>
+    <string name="log_weight_kg">Kg.</string>
+    <string name="main_complete_profile">Please complete your profile</string>
+    <string name="profile_birthday">When is your birthday?</string>
+    <string name="profile_height">What is your height?</string>
+    <string name="profile_birthdate_hint">Birthdate</string>
+    <string name="profile_weight_hint">Height</string>
+    <string name="profile_meters">m.</string>
+    <string name="item_weight">%1$s Kg.</string>
+    <string name="item_bmi">BMI: %1$s</string>
+    <string name="profile_invalid_inputs">Invalid inputs! You must be at least 18 years old and enter a valid height.</string>
+</resources>

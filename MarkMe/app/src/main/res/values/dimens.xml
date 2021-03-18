@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fully_stretchable">0dp</dimen>
+    <dimen name="cardview_corner_radius">5dp</dimen>
+    <dimen name="standard">8dp</dimen>
+    <dimen name="xlarge">32dp</dimen>
+    <dimen name="image_default_margin">5dp</dimen>
+    <dimen name="image_default_padding">5dp</dimen>
+    <dimen name="card_default_margin">5dp</dimen>
+    <dimen name="card_default_corner_radius">5dp</dimen>
+    <dimen name="card_elements_default_padding">5dp</dimen>
+    <dimen name="text_large">16sp</dimen>
+    <dimen name="text_default_padding">5dp</dimen>
+    <dimen name="dimen_fully_stretchable">0dp</dimen>
+    <dimen name="rv_bottom_margin">10dp</dimen>
+    <dimen name="cv_grading_margin">1dp</dimen>
+</resources>

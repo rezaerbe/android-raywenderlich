@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context=".ui.view.CoursesActivity">
+
+  <com.google.android.material.chip.ChipGroup
+    android:id="@+id/filterOptions"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp">
+
+    <com.google.android.material.chip.Chip
+      android:id="@+id/filterBeginner"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/beginner" />
+
+    <com.google.android.material.chip.Chip
+      android:id="@+id/filterAdvanced"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/advanced" />
+
+    <com.google.android.material.chip.Chip
+      android:id="@+id/filterCompleted"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/completed" />
+
+  </com.google.android.material.chip.ChipGroup>
+
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/courseList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    tools:listitem="@layout/course_list_item"/>
+
+</LinearLayout>

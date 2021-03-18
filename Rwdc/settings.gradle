@@ -1,0 +1,3 @@
+include ':librwdc'
+include ':app'
+rootProject.name = "Rwdc"

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FoodEat</string>
+
+    <string name="search">Search</string>
+    <string name="rating">%d/5</string>
+    <string name="results_fetched">Results successfully fetched</string>
+    <string name="top">Top</string>
+    <string name="bottom">Bottom</string>
+    <string name="rating_icon">Rating icon</string>
+    <string name="all_restaurants">All Restaurants</string>
+    <string name="top_rated">Top 5 Rated</string>
+</resources>

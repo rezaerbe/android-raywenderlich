@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.erbe.bmicalc.log.viewmodel.LogViewModel" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".log.LogActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/editText_weight"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="@string/log_weight_hint"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:text="@={viewModel.weight}"
+                app:layout_constraintBottom_toTopOf="@+id/editText_date"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed"
+                tools:ignore="Autofill" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/log_weight_kg"
+                app:layout_constraintBottom_toBottomOf="@+id/editText_weight"
+                app:layout_constraintStart_toEndOf="@+id/editText_weight"
+                app:layout_constraintTop_toTopOf="@+id/editText_weight" />
+
+            <EditText
+                android:id="@+id/editText_date"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:clickable="true"
+                android:focusable="false"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:inputType="none"
+                android:longClickable="false"
+                android:maxLines="1"
+                android:text="@={viewModel.date}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText_weight"
+                tools:ignore="Autofill,KeyboardInaccessibleWidget,LabelFor,TextFields" />
+
+            <ImageView
+                android:id="@+id/imageView_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/editText_date"
+                app:layout_constraintEnd_toStartOf="@+id/editText_date"
+                app:layout_constraintTop_toTopOf="@+id/editText_date"
+                app:srcCompat="@drawable/ic_calendar"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/imageView_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/editText_weight"
+                app:layout_constraintEnd_toStartOf="@+id/editText_weight"
+                app:layout_constraintTop_toTopOf="@+id/editText_weight"
+                app:srcCompat="@drawable/ic_weighing_scale_svgrepo_com"
+                tools:ignore="ContentDescription" />
+            
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:enabled="@{viewModel.isSaveEnabled}"
+            app:srcCompat="@drawable/ic_check_24dp" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    
+</layout>

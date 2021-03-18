@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Tourx</string>
+
+    <string name="result">Result</string>
+    <string name="two_way_travel">Two Way Travel?</string>
+    <string name="number_of_passenger">Number of passenger</string>
+    <string name="cost_per_person">Cost per person</string>
+    <string name="demo_place_name">Paris</string>
+    <string name="demo_planet">Earth</string>
+    <string name="load_quickest_one">Load The Quickest One</string>
+    <string name="all_at_once">All At once</string>
+    <string name="load_when_received">Load When Received</string>
+    <string name="experimental_features">Experimental Features\n(UNSTABLE)</string>
+    <string name="switch_on_next">Switch On Next</string>
+    <string name="demo">Demo</string>
+    <string name="join">Join</string>
+    <string name="dispose">Dispose</string>
+    <string name="group_join">Group Join</string>
+</resources>

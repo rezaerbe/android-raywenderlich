@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/medium_margin"
+    tools:context=".ui.AddEditActivity">
+
+  <Button
+      android:id="@+id/buttonSaveQuote"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/medium_margin"
+      android:background="@color/colorPrimary"
+      android:text="@string/save"
+      android:textColor="@android:color/white"
+      app:layout_constraintTop_toBottomOf="@id/editTextQuoteDate" />
+
+  <EditText
+      android:id="@+id/editTextQuoteAuthor"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/small_margin"
+      android:hint="@string/author"
+      android:inputType="text"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/editTextQuoteText" />
+
+  <EditText
+      android:id="@+id/editTextQuoteDate"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/small_margin"
+      android:focusable="true"
+      android:hint="@string/date"
+      android:editable="false"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/editTextQuoteAuthor" />
+
+  <EditText
+      android:id="@+id/editTextQuoteText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/small_margin"
+      android:hint="@string/text"
+      android:inputType="text"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

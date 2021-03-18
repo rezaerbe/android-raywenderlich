@@ -1,0 +1,40 @@
+<!--
+  ~ Copyright (c) 2019 Razeware LLC
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in
+  ~ all copies or substantial portions of the Software.
+  ~
+  ~ Notwithstanding the foregoing, you may not use, copy, modify, merge, publish,
+  ~ distribute, sublicense, create a derivative work, and/or sell copies of the
+  ~ Software in any work that is designed, intended, or marketed for pedagogical or
+  ~ instructional purposes related to programming, coding, application development,
+  ~ or information technology.  Permission for such use, copying, modification,
+  ~ merger, publication, distribution, sublicensing, creation of derivative works,
+  ~ or sale is expressly withheld.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  ~ THE SOFTWARE.
+  -->
+
+<vector android:height="24dp" android:viewportHeight="512"
+    android:viewportWidth="512" android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#FFE285" android:pathData="M472.31,229.76c0,-41.516 -33.657,-75.172 -75.172,-75.172H114.863c-41.516,0 -75.172,33.656 -75.172,75.172v47.352h432.618V229.76H472.31z"/>
+    <path android:fillColor="#D53349" android:pathData="M92.806,433.795l-53.115,0l0,-156.683l432.619,0l0,156.683l-359.229,0"/>
+    <path android:fillColor="#EC6907" android:pathData="M156.795,29.425c0,0 27.103,12.962 27.103,40.062c0,17.247 -12.134,31.228 -27.103,31.228c-14.969,0 -27.103,-13.98 -27.103,-31.228C129.692,42.387 156.795,29.425 156.795,29.425z"/>
+    <path android:fillColor="#EC6907" android:pathData="M256.001,29.425c0,0 27.101,12.962 27.101,40.062c0,17.247 -12.134,31.228 -27.102,31.228c-14.968,0 -27.102,-13.98 -27.102,-31.228C228.897,42.387 256.001,29.425 256.001,29.425z"/>
+    <path android:fillColor="#EC6907" android:pathData="M355.206,29.425c0,0 27.103,12.962 27.103,40.062c0,17.247 -12.133,31.228 -27.103,31.228c-14.968,0 -27.103,-13.98 -27.103,-31.228C328.104,42.387 355.206,29.425 355.206,29.425z"/>
+    <path android:fillColor="#2BA5B1" android:pathData="M113.081,433.795l391.317,0l0,49.604l-496.796,0l0,-49.604l85.204,0"/>
+    <path android:fillColor="#53180F" android:pathData="M479.912,426.193V284.714V269.51v-39.75c0,-45.642 -37.132,-82.774 -82.774,-82.774h-34.33v-39.619c15.49,-3.889 27.103,-19.391 27.103,-37.879c0,-31.528 -30.141,-46.307 -31.425,-46.921l-3.28,-1.568l-3.28,1.568c-1.283,0.613 -31.425,15.392 -31.425,46.921c0,18.489 11.612,33.99 27.103,37.879v39.619h-84.001v-39.619c15.49,-3.889 27.101,-19.391 27.101,-37.879c0,-31.528 -30.14,-46.307 -31.425,-46.921L256,20.998l-3.28,1.568c-1.283,0.613 -31.425,15.392 -31.425,46.921c0,18.489 11.612,33.99 27.103,37.879v39.619h-84.002v-39.619c15.49,-3.889 27.103,-19.391 27.103,-37.879c0,-31.528 -30.141,-46.307 -31.425,-46.921l-3.28,-1.568l-3.28,1.568c-1.283,0.613 -31.425,15.392 -31.425,46.921c0,18.489 11.612,33.99 27.103,37.879v39.619h-34.33c-45.642,0 -82.774,37.132 -82.774,82.774v39.75v15.204v141.479H0v64.809h512v-64.809H479.912zM335.706,69.488c0,-16.957 13.174,-27.327 19.498,-31.327c6.338,4.01 19.501,14.377 19.501,31.327c0,13.027 -8.748,23.626 -19.5,23.626C344.454,93.112 335.706,82.515 335.706,69.488zM236.5,69.488c0,-16.958 13.176,-27.328 19.499,-31.327c6.338,4.01 19.501,14.377 19.501,31.327c0,13.027 -8.748,23.626 -19.499,23.626C245.248,93.112 236.5,82.515 236.5,69.488zM137.294,69.488c0,-16.957 13.175,-27.327 19.498,-31.327c6.338,4.01 19.501,14.377 19.501,31.327c0,13.027 -8.748,23.626 -19.5,23.626C146.042,93.112 137.294,82.515 137.294,69.488zM47.293,229.76c0,-37.258 30.312,-67.57 67.57,-67.57h282.274c37.258,0 67.57,30.312 67.57,67.57v39.75H47.293L47.293,229.76L47.293,229.76zM496.796,475.797H15.204v-34.4h16.884h60.718v-15.204H47.293V284.714h417.414v15.208H256v15.204h208.707v15.208H355.206v15.204h109.501v80.655H113.081v15.204h366.832h16.884v34.4H496.796z"/>
+</vector>

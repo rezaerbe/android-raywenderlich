@@ -1,0 +1,3 @@
+include ':libsunzoid'
+include ':app'
+rootProject.name = "Sunzoid"
